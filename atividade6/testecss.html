@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>CSS Table</title>
+        
+        <style>
+            body{background-color: bisque;}
+            Table{width: 100%;border-color: rgba(240, 255, 255, 0);}
+            caption{caption-side:top; background-color: burlywood; }
+            p{text-align: justify;}
+            h1{text-align: center;}
+                .table2{border-color: violet;}
+                .tr1{background-color: gray;}
+                .tr2{border-color: blue;}
+                .tr3{border-color:rgb(18, 18, 19); text-align: center;}
+                .td4 { border: 1px solid violet; padding: 5px; color: violet; }
+                .th1 { background-color: grey; padding: 5; text-align: center;}
+                
+        </style>
+	</head>
+	<body>
+        <h1>Propriedades do CSS</h1>
+        <p>A linguagem utilizada atualmente para definir o layout dos documentos HTML é a CSS, uma abreviação para o termo em inglês Cascading Style Sheet que, traduzido para o português, ficou como folhas de estilo em cascata.</p>
+        <p>Nesse site iremos observar em prática o uso de cinco propriedades no CSS da tag "tr" utilizada na tag "table". Uma propriedade CSS é uma característica (como a cor) cujo valor define o aspecto de como o navegador deve exibir o elemento.</p>
+	<div>	
+        <h3>Propriedade 1</h3>
+        <Table border="5">
+            <caption>A propriedade text-align é utilizada na formatação de textos, sendo utilizada para determinar a posição da margem.</caption>
+            <tr class="tr3">
+                <td>Nessa célula foi usada a propriedade "text-align:center" para centralizar a margem do texto.</td>
+            </tr>
+        </Table>
+    </div>
+    <div>
+        <h3>Propriedade 2</h3>
+        <Table border="5">
+            <caption>A propriedade border-color é utilizada em geral para alterar a coloração da borda da célula.</caption>
+            <tr class="tr2">
+                <td>Nessa célula foi usada a propriedade "border-color:blue" para mudar a cor da borda para azul.</td>
+            </tr>
+        </Table>
+    </div>
+    <div>
+        <h3>Propriedade 3</h3>
+        <Table border="2" class="table2">
+            <caption>A propriedade background-color é utilizada em geral para mudar a cor de fundo de células, páginas.</caption>
+            <tr class="tr1">
+                <td>Nessa célula foi usada a propriedade "background-color:gray" para mudar a cor do fundo do conteúdo da célula para cinza.</td>
+            </tr>
+        </Table>
+    </div>
+    <div>
+        <h3>Propriedade 4</h3>
+        <Table border="2" class="table2">
+            <caption>A propriedade colspan é utilizada para unir células/colunas em uma mesma linha</caption>
+            <tr >
+                <td class="th1" colspan="2">Nessa célula foi usada a propriedade "colspan" para unir duas células da mesma linha.</td>
+            </tr>
+            <tr>
+                <td class="td4">Célula A.</td>
+                <td class="td4">Célula B.</td>
+            </tr>
+        </Table>
+    </div>
+    <div>
+        <h3>Propriedade 5</h3>
+        <Table border="2" class="table2">
+            <caption>A propriedade rowspan é utilizada para unir células/colunas em linhas abaixo.</caption>
+            <tr >
+                <td class="th1" rowspan="2">Nessa celula foi usada a propriedade "rowspan" para unir duas células que estão sobrepostas.</td>
+                <td class="td4">Célula A.</td>
+            </tr>
+            <tr>     
+                <td class="td4">Célula B.</td>
+            </tr>
+        </Table>
+    </div>
+	</body>
+
+</html>
