@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Produtos</title>
+        <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #F6F6F6;
+        
+        }
+        
+        form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 18px;
+        background-color: #FFF;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        margin-top: 45px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        
+    
+        input[type=text], input[type=number], input[type=date], select {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        background-color: #d3eecb;
+        font-size: 16px;
+        }
+        
+        input[type=checkbox], input[type=radio] {
+        margin-right: 5px;
+        margin-left: 5px;
+        }
+        
+        input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        }
+        
+        input[type=submit]:hover {
+        background-color: #45a049;
+        }
+        
+        h1 {
+        text-align: center;
+        color: #4CAF50;
+        }
+        
+        div {text-align: center;
+            align-items: center;
+        }
+
+        p {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        }
+        
+        input[type=checkbox] + label {
+        font-weight: normal;
+        }
+        
+        input[type=radio] + label {
+        font-weight: normal;
+        }
+        
+        input[type=text]:focus, input[type=number]:focus, input[type=date]:focus {
+        background-color: #ddd;
+        }
+        
+        input[type=checkbox]:checked + label {
+        color: #4CAF50;
+        font-weight: bold;
+        }
+        
+        input[type=radio]:checked + label {
+        color: #4CAF50;
+        font-weight: bold;
+        }
+    
+        </style>
+    </head>
+    <body>
+        <h1>Cadastro de Produtos</h1>
+    <div>
+        <form>
+            <label for="Produto">Nome do produto:</label><br>
+            <input type="text" id="Produto" name="Produto"><br>
+            <label for="Marca">Marca do produto:</label><br>
+            <input type="text" id="Marca" name="Marca"><br>
+            <label for="lote">Lote de fabricação:</label><br>
+            <input type="text" id="lote" name="lote"><br>
+       </form>
+    </div>
+    <div>
+       <form>
+        <label for="quantidade">Quantidade de produtos em estoque:</label><br>
+        <input type="number" id="quantidade" name="quantidade" min="1">
+       </form>
+    </div>
+    <div>
+       <form>
+        <label for="validade">Validade do produto</label><br>
+        <input type="date" id="validade" name="validade">
+       </form>
+    </div>
+    <div>
+        <form>
+            <input type="checkbox" id="falta" name="falta" value="falta">
+            <label for="falta">Produto próximo da data de validade?</label><br>
+        </form>
+    </div>
+    <div>
+        <p>Tipo de produto</p>
+        <form>
+            <input type="radio" id="tipo" name="tipo" value="perecivel">
+            <label for="perecivel">Perecível</label><br>
+            <input type="radio" id="tipo" name="tipo" value="nperecivel">
+            <label for="nperecivel">Não perecível</label><br>
+        </form>
+    </div>
+    <div>
+        <p>Selecione a classificação do produto</p>
+        <Form>
+            <input type="radio" id="tipo" name="tipo" value="cereais">
+            <label for="cereais">Cereais</label><br>
+            <input type="radio" id="tipo" name="tipo" value="laticinios">
+            <label for="laticinios">Laticínios</label><br>
+            <input type="radio" id="tipo" name="tipo" value="frutas">
+            <label for="frutas">Frutas</label><br>
+            <input type="radio" id="tipo" name="tipo" value="verduras">
+            <label for="verduras">Verduras</label><br>
+            <input type="radio" id="tipo" name="tipo" value="carnes">
+            <label for="carnes">Carnes</label><br>
+        </Form>
+    </div>
+    <div>
+        <form>
+            <label for="falta">Produtos em falta:</label><br>
+            <input type="text" id="falta" name="falta"><br>
+        </form>
+    </div>
+    <div>
+        <p>Clique em enviar para realizar o cadastro.</p>
+        <form>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    </body>
+</html>
