@@ -1,0 +1,143 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>GreveXBoleto</title>
+        <Style>
+        
+            body{font-family: Arial, sans-serif;
+                background-image: url(https://static.fabapp.com/e91b5586e23d247a2bedaa8e0773f19e2cc449bb);
+                background-attachment: fixed; 
+                }
+
+            form{text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                background-color: rgba(90, 218, 139, 0.986);
+                border-radius: 10px;
+                margin-top: 40px;
+                max-width: 450px;
+                margin-left: auto;
+                margin-right: auto;}
+            
+            input[type=text], input[type=date], select {
+                background-color: rgba(255, 0, 0, 0.637);
+                width: 80%;
+                padding: 8px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;}
+
+            input[type=checkbox], input[type=radio] {
+                margin-right: 5px;
+                margin-left: 5px;}
+            
+            p, h1 { background-color: rgb(9, 153, 81);
+                font-weight: bold;
+                margin-top: 10px;
+                margin-bottom:-30px;
+                text-align:center;
+                width: 46%;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 9px;
+                padding: 8px;}
+                
+            input[type=checkbox] + label {
+                font-weight: normal;}
+                
+            input[type=radio] + label {
+                font-weight: normal;}
+                
+            input[type=text]:focus, input[type=number]:focus, input[type=date]:focus {
+                background-color: red}
+                
+            input[type=checkbox]:checked + label {
+                color: blue;
+                font-weight: bold;}
+                
+            input[type=radio]:checked + label {
+                color: blue;
+                font-weight: bold;}
+            
+            input[type=submit]{ background-color: rgba(9, 153, 81);
+                width: 100%;
+                padding: 8px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                }
+
+            select:focus{color: blue}   
+        </Style>
+    <body>
+        <h1>Cadastro de atletas GxB:</h1>
+        <div>
+            <form>
+                <label for="atletica">Sua atlética:</label><br>
+                <input type="text" id="Atletica" name="atletica"><br>
+                <label for="atleta">Nome do atleta:</label><br>
+                <input type="text" id="atleta" name="atleta"><br>
+                <label for="Idade">Data de nascimento:</label><br>
+                <input type="date" id="Idade" name="Idade"><br>
+                <label for="nmatricula">Número de matrícula:</label><br>
+                <input type="text" id="nmatricula" name="nmatricula"><br>
+                <label for="facul">Sua instituição de ensino:</label><br>
+                <select id="facul" name="facul">
+                <option value="ifto">IFTO</option>
+                <option value="uft">UFT</option>
+                <option value="unitins">UNITINS</option>
+                <option value="unip">UNIP</option>
+                <option value="itop">ITOP</option>
+                <option value="itapac">ITAPAC</option>
+                <option value="catolica">CATOLICA</option>
+                <option value="uninassau">UNINASSAU</option>
+                <option value="outra">OUTRA</option>
+                <input type="hidden" id="outra" name="outra"><br>
+                </select>
+            </form>
+        </div>
+        <p>Selecione a opção relacionada a modalidade que você irá participar.</p>
+        <div>
+            <form>
+                <input type="radio" id="sinuca" name="modalidade" value="sinuca">
+                <label for="sinuca">Sinuca</label><br>
+                <input type="radio" id="truco" name="modalidade" value="truco">
+                <label for="truco">Truco</label><br>
+                <input type="radio" id="volei" name="modalidade" value="volei">
+                <label for="volei">Vôlei</label><br>
+                <input type="radio" id="poker" name="modalidade" value="poker">
+                <label for="poker">Poker</label><br>
+                <input type="radio" id="futsal" name="modalidade" value="futsal">
+                <label for="futsal">Futsal</label><br>
+            </form>
+        </div>
+        <p>Selecione os produtos que deseja comprar.</p>
+        <div>
+            <form>
+                <input type="checkbox" id="ingresso" name="ingresso" value="ingresso">
+                <label for="ingresso">Ingresso</label><br>
+                <input type="checkbox" id="caneca" name="caneca" value="caneca">
+                <label for="caneca">Caneca</label><br>
+                <input type="checkbox" id="tirante" name="tirante" value="tirante">
+                <label for="tirante">Tirante</label><br>
+                <input type="checkbox" id="colete" name="colete" value="colete">
+                <label for="colete">Colete</label><br>
+                <input type="checkbox" id="bone" name="bone" value="bone">
+                <label for="bone">Boné</label><br>
+            </form>
+        </div>
+        <div>
+            <p><strong>Clique em enviar para realizar o cadastro.</p>
+            <form>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </body>
+    </head>
+</html>
